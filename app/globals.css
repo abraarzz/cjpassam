@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-display: var(--font-display);
+  --font-condensed: var(--font-condensed);
+}
+
+@layer utilities {
+  .animate-marquee {
+    animation: ticker 50s linear infinite;
+  }
+
+  .checklist-item {
+    grid-template-areas: "num tick" "title tick" "sub tick";
+  }
+
+  @media (min-width: 640px) {
+    .checklist-item {
+      grid-template-areas: "num title tick" "num sub tick";
+    }
+  }
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

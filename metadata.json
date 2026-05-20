@@ -1,0 +1,6 @@
+{
+  "name": "Cockroach Janta Party - Assam Wing",
+  "description": "Premium Gen-Z satirical political movement site bridging futuristic minimalism with localized content.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
