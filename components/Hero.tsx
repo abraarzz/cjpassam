@@ -22,27 +22,27 @@ export default function Hero() {
             PARTY LAUNCH · LIVE SINCE YESTERDAY
           </div>
 
-          <div className="relative inline-block">
+          <div className="relative w-full">
             <motion.h1 
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-[clamp(58px,9.5vw,138px)] font-display leading-[0.86] tracking-[-0.015em] text-[#1A1108] mb-7 uppercase relative z-10"
+              className="text-[clamp(58px,9.5vw,138px)] font-display leading-[0.86] tracking-[-0.015em] text-[#1A1108] mb-7 uppercase relative z-10 inline-block pr-10 lg:pr-24"
             >
               Voice of the<br />
               <span className="text-[#B84915]">Lazy</span> &<br />
               <em className="text-[#1F5A2E] font-serif italic font-normal tracking-[-0.02em] capitalize">Unemployed.</em>
+              
+              {/* Gamusa Image - Anchored inside the H1 relative to the text flow */}
+              <div className="absolute right-0 top-0 w-[100px] sm:w-[140px] lg:w-[220px] -translate-y-10 lg:-translate-y-20 translate-x-5 lg:translate-x-10 z-20 drop-shadow-xl transform rotate-[15deg] pointer-events-none">
+                <img 
+                  src="https://i.ibb.co/N6jdPdfN/gamusa.png"
+                  alt="Assamese Gamusa"
+                  className="w-full h-auto"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
             </motion.h1>
-            
-            {/* Gamusa Image */}
-            <div className="absolute -right-[20px] sm:-right-[40px] lg:-right-[80px] -top-[40px] sm:-top-[60px] lg:-top-[80px] w-[100px] sm:w-[140px] lg:w-[220px] z-20 drop-shadow-xl transform rotate-[15deg] pointer-events-none">
-              <img 
-                src="https://i.ibb.co/N6jdPdfN/gamusa.png"
-                alt="Assamese Gamusa"
-                className="w-full h-auto"
-                referrerPolicy="no-referrer"
-              />
-            </div>
           </div>
 
           <motion.div 
